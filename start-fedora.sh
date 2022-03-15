@@ -123,7 +123,7 @@ sudo pip install platformio
 
 #dwm
 sudo dnf module install dwm:latest
-git clone git@github.com:joetorres/dwm.git ~/projetos/pessoal/dwm
+git clone https://github.com/joetorres/dwm.git ~/projetos/pessoal/dwm
 cd ~/projetos/pessoal/dwm
 sudo make install
 cp bg.jpg ~/.local/share/bg
