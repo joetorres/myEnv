@@ -1,5 +1,5 @@
-# Sobre esse repositório
+# Sobre
 
-Um script malaco que instala tudo o que preciso para começar a trabalhar. 
+Um script malaco para poder começar a trabalhar em uma instalação linux zerada.
 
-Testado com fedora 35 e ubuntu 20.04
+Testadio no Fedora 35 e Ubuntu 20.04.

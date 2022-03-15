@@ -11,6 +11,8 @@ mkdir ~/.local/share/bg
 mkdir ~/.dwm
 mkdir ~/projetos
 mkdir ~/projetos/pessoal
+mkdir ~/onedrive
+
 
 
 #instalações básicas de dependencias
@@ -92,9 +94,8 @@ mkdir ~/.ssh
 cp config ~/.ssh
 ssh-keygen -t rsa -N ''
 
-#onedrive
-mkdir ~/tools
-cp  onedrive.sh ~/tools/
+#onedrive rclone
+cp  ./scripts/onedrive.sh ~/.local/bin
 
 #docker
 sudo dnf -y install dnf-plugins-core
