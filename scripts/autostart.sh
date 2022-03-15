@@ -2,4 +2,8 @@
 
 ~/.local/bin/fehbg.sh
 
-while true ; do xsetroot -name "`date '+%Y-%m-%d %H:%M.%S'`"; sleep 1m ; done &
+traf=$($HOME/.local/bin/sb-nettraf.sh)
+bat=$($HOME/.local/bin/sb-battery.sh)
+clock=$($HOME/.local/bin/sb-clock.sh)
+
+while true ; do xsetroot -name "$bat | $traf | $clock"; sleep 10s ; done &

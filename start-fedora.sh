@@ -132,5 +132,5 @@ cd ~/projetos/pessoal/dwm
 sudo make install
 cp bg.jpg ~/.local/share/bg
 cp ./scripts/autostart.sh ~/.dwm
-cp scripts/fehbg.sh ~/.local/bin
+cp scripts/*.sh ~/.local/bin
 chmod +x autostart.sh
