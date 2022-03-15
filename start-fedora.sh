@@ -13,7 +13,10 @@ mkdir ~/projetos
 mkdir ~/projetos/pessoal
 mkdir ~/onedrive
 
-
+cp bg.jpg ~/.local/share/bg
+cp ./scripts/autostart.sh ~/.dwm
+cp ./scripts/*.sh ~/.local/bin
+chmod +x ~/.local/bin/autostart.sh
 
 #instalações básicas de dependencias
 sudo dnf install -y \
@@ -126,7 +129,4 @@ sudo dnf module install dwm:latest
 git clone https://github.com/joetorres/dwm.git ~/projetos/pessoal/dwm
 cd ~/projetos/pessoal/dwm
 sudo make install
-cp bg.jpg ~/.local/share/bg
-cp ./scripts/autostart.sh ~/.dwm
-cp scripts/*.sh ~/.local/bin
-chmod +x autostart.sh
+
