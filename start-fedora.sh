@@ -18,6 +18,13 @@ cp ./scripts/autostart.sh ~/.dwm
 cp ./scripts/*.sh ~/.local/bin
 chmod +x ~/.local/bin/autostart.sh
 
+
+#RPM fusion
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf group update core
+
+
 #instalações básicas de dependencias
 sudo dnf install -y \
     vim \
@@ -29,6 +36,7 @@ sudo dnf install -y \
     golang \
     wget \
     curl \
+    mpv \
     firefox \
     ranger \
     openssh-server \
