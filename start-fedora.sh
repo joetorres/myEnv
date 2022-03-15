@@ -28,10 +28,7 @@ sudo dnf install -y \
     curl \
     firefox \
     ranger \
-    taskwarrior \
-    ssh \
     openssh-server \
-    chromium-browser \
     cmake \
     gcc \
     gdb \
@@ -43,7 +40,6 @@ sudo dnf install -y \
     neofetch \
     deluge \
     gitk \
-    mpv \
     rclone \
     gimp \
     libX11-devel \
