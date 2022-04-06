@@ -1,5 +1,6 @@
-# Sobre
+# What are these?
 
-Um script malaco para poder começar a trabalhar em uma instalação linux zerada.
+A couplee of sh*t scripts to start working on a new linux wnviroment. 
+Tested in Ubuntu 20.04 and Fedora 35
 
-Testadio no Fedora 35 e Ubuntu 20.04.
+The Fedora 35 is more up to date. and will start a new system with everything you need to start working and install a more sensible window manager (dwm) for systens that have the computational power similar to a potato.  
