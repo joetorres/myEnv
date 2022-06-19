@@ -16,6 +16,7 @@ sudo apt-get install -y \
     ranger \
     taskwarrior \
     ssh \
+    chromium-browser \
     cmake \
     gcc \
     gdb \
@@ -25,13 +26,15 @@ sudo apt-get install -y \
     tmux \
     net-tools \
     neofetch \
-    deluge \
     apt-transport-https \
     gnupg-agent \
     ca-certificates \
+    gitk \
+    mpv \
     snapd \
-    rclone
-  
+    rclone \
+    lua5.3
+    
 
 #config git
 git config --global user.email "jeronimo@mykolab.com"
@@ -46,9 +49,7 @@ wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 
 sudo apt-get update
-sudo apt-get install dotnet-sdk-5.0 -y
-sudo apt-get install dotnet-sdk-3.1 -y
-sudo apt-get install dotnet-sdk-2.1 -y
+sudo apt-get install dotnet-sdk-6.0 -y
 
 
 #config de SSH
@@ -69,7 +70,11 @@ sudo ln -s /usr/local/bin/node /usr/bin/nodejs
 #vim
 sudo apt install build-essential cmake vim-nox python3-dev -y
 sudo apt install mono-complete golang nodejs default-jdk npm -y
-cp vimrc ~/.vimrc
+cp ./dotconfig/vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+python3 install.py --all

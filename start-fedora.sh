@@ -117,8 +117,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 
 #vim
-sudo apt install build-essential cmake vim-nox python3-dev -y
-sudo apt install mono-complete golang nodejs default-jdk npm -y
 cp ./dotconfig/vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
