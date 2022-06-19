@@ -53,10 +53,7 @@ sudo apt-get install dotnet-sdk-6.0 -y
 
 
 #config de SSH
-mkdir ~/.ssh
-cp config ~/.ssh
 ssh-keygen
-ssh-copy-id bahamut
 
 
 #node
