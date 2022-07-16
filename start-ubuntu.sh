@@ -19,10 +19,16 @@ sudo apt-get install -y \
     ssh \
     chromium-browser \
     cmake \
+    default-jdk \
+    build-essential \
+    vim-nox \
+    python3-dev \
+    mono-complete \
     gcc \
     gdb \
     gpp \
     g++ \
+    golang \
     htop \
     tmux \
     net-tools \
@@ -91,12 +97,10 @@ ssh-copy-id bahamut
 
 
 #node
-sudo npm i -g npm 
-sudo npm i -g n 
-sudo n lts
-sudo rm /usr/bin/nodejs
-sudo ln -s /usr/local/bin/node /usr/bin/nodejs
-
+#install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install --lts
+nvm use --lts
 
 
 mkdir ~/tools
@@ -115,18 +119,15 @@ sudo usermod -aG docker ${USER}
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-
 #vim
-sudo apt install build-essential cmake vim-nox python3-dev -y
-sudo apt install mono-complete golang nodejs default-jdk npm -y
 cp vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-#git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
-#cd ~/.vim/bundle/YouCompleteMe
-#git submodule update --init --recursive
-#python3 install.py --all
+git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+python3 install.py --all
 
 # instalando platformio e arduino
 pip install platformio 

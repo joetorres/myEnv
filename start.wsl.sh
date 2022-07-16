@@ -5,6 +5,8 @@ sudo apt-get upgrade -y
 
 #instalações básicas de dependencias
 sudo apt-get install -y \
+    firefox \
+    golang \
     software-properties-common \
     apt-utils \
     vim \
@@ -37,7 +39,7 @@ sudo apt-get install -y \
     
 
 #config git
-git config --global user.email "jeronimo@mykolab.com"
+git config --global user.email "jeronimo.torres@outlook.com"
 git config --global user.name "Jerônimo Torres"
 git config --global credential.helper store
 git config --global core.editor "vim"
@@ -65,8 +67,6 @@ sudo ln -s /usr/local/bin/node /usr/bin/nodejs
 
 
 #vim
-sudo apt install build-essential cmake vim-nox python3-dev -y
-sudo apt install mono-complete golang nodejs default-jdk npm -y
 cp ./dotconfig/vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
