@@ -52,18 +52,15 @@ git config --global user.email "jeronimo.torres@outlook.com"
 git config --global user.name "Jerônimo Torres"
 git config --global credential.helper store
 git config --global core.editor "vim"
-git config pull.rebase false 
+git config --globalpull.rebase false 
 
 
 
 #dotnet
-wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
-
-sudo apt-get update
-sudo apt-get install dotnet-sdk-5.0 -y
-sudo apt-get install dotnet-sdk-3.1 -y
-sudo apt-get install dotnet-sdk-2.1 -y
+rm packages-microsoft-prod.deb
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
 
 #php 
 sudo apt install php php-common php-mysql php-pgsql php-zip php-bz2 php-composer-ca-bundle php-bcmath php-curl php-cgi php-date php-mbstring php-uuid phpunit -y
@@ -72,7 +69,7 @@ sudo apt install php php-common php-mysql php-pgsql php-zip php-bz2 php-composer
 #snaps
 sudo snap install code --classic
 sudo snap install dbeaver-ce
-sudo snap install spotify
+sudo snap install spotify	
 sudo snap install postman
 sudo snap install discord
 sudo snap install android-studio --classic
@@ -85,14 +82,6 @@ sudo pip3 install subliminal
 sudo pip3 install virtualenv
 echo -e '\n' >> ~/.bashrc
 echo 'alias sub="subliminal download -l pt-br ."' >> ~/.bashrc
-
-
-
-#config de SSH
-mkdir ~/.ssh
-cp config ~/.ssh
-ssh-keygen
-ssh-copy-id bahamut
 
 
 
@@ -120,7 +109,8 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 #vim
-cp vimrc ~/.vimrc
+mkdir ~/.temp
+cp dotconfig/vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
