@@ -52,7 +52,7 @@ git config --global user.email "jeronimo.torres@outlook.com"
 git config --global user.name "Jerônimo Torres"
 git config --global credential.helper store
 git config --global core.editor "vim"
-git config --globalpull.rebase false 
+git config --global pull.rebase false 
 
 
 
