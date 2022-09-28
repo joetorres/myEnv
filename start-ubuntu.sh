@@ -4,48 +4,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 #instalações básicas de dependencias
-sudo apt-get install -y \
-    software-properties-common \
-    apt-utils \
-    vim \
-    git \
-    nodejs \
-    npm \
-    python3-pip \
-    wget curl \
-    firefox \
-    ranger \
-    taskwarrior \
-    ssh \
-    chromium-browser \
-    cmake \
-    default-jdk \
-    build-essential \
-    vim-nox \
-    python3-dev \
-    mono-complete \
-    gcc \
-    gdb \
-    gpp \
-    g++ \
-    golang \
-    htop \
-    tmux \
-    net-tools \
-    neofetch \
-    deluge \
-    apt-transport-https \
-    gnupg-agent \
-    ca-certificates \
-    gitk \
-    mpv \
-    snapd \
-    rclone \
-    arduino
-
-
-
-
+sudo apt-get install -y software-properties-common apt-utils vim git nodejs npm python3-pip wget curl firefox ranger taskwarrior ssh chromium-browser cmake default-jdk build-essential vim-nox python3-dev mono-complete gcc gdb gpp g++ golang htop tmux net-tools neofetch deluge apt-transport-https gnupg-agent ca-certificates gitk mpv snapd rclone arduino
 
 #config git
 git config --global user.email "jeronimo.torres@outlook.com"
@@ -65,14 +24,8 @@ sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
 #php 
 sudo apt install php php-common php-mysql php-pgsql php-zip php-bz2 php-composer-ca-bundle php-bcmath php-curl php-cgi php-date php-mbstring php-uuid phpunit -y
 
-
 #snaps
-sudo snap install code --classic
-sudo snap install dbeaver-ce
-sudo snap install spotify	
-sudo snap install postman
-sudo snap install discord
-sudo snap install android-studio --classic
+sudo snap install code --classic && sudo snap install dbeaver-ce && sudo snap install spotify && sudo snap install postman && sudo snap install discord && sudo snap install android-studio --classic
 
 #joplin
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
@@ -102,7 +55,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 sudo apt update
 apt-cache policy docker-ce
-sudo apt install docker-ce
+sudo apt install docker-ce -y
 sudo usermod -aG docker ${USER}
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
