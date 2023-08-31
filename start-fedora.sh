@@ -49,19 +49,12 @@ sudo dnf install -y \
     tmux \
     net-tools \
     neofetch \
-    deluge \
     gitk \
     rclone \
     gimp \
     libX11-devel \
     libXft-devel \
-    libXinerama-devel \
-    xorg-x11-xinit-session \
-    steam \
-    slock \
-    xsetroot \
-    feh
-
+    libXinerama-devel
 
 
 #config git
