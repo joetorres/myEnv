@@ -22,9 +22,7 @@ rm packages-microsoft-prod.deb
 sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
 
 #php 
-sudo apt install php8.1 php8.1-zip php8.1-gmp php8.1-http php8.1-cli php8.1-bz2  php8.1-mysql php8.1-ssh2 php8.1-sqlite3 php8.1-soap php8.1-ldap php8.1-odbc php8.1-oauth \
-php8.1-xml php8.1-mbstring php8.1-common php8.1-curl php8.1-cgi  php8.1-yaml php8.1-uuid  php8.1-pgsql php8.gd php8.1-uploadprogress php8.1-smbclient php8.1-ldap -y
-
+sudo apt install php8.1 php8.1-zip php8.1-gmp php8.1-http php8.1-cli php8.1-bz2  php8.1-mysql php8.1-ssh2 php8.1-sqlite3 php8.1-soap php8.1-ldap php8.1-odbc php8.1-oauth \ php8.1-xml php8.1-mbstring php8.1-common php8.1-curl php8.1-cgi  php8.1-yaml php8.1-uuid  php8.1-pgsql php8.1-gd php8.1-uploadprogress php8.1-smbclient php8.1-ldap php8.1-bcmath -y
 #snaps
 sudo snap install code --classic && sudo snap install dbeaver-ce && sudo snap install spotify && sudo snap install postman && sudo snap install discord && sudo snap install android-studio --classic
 
