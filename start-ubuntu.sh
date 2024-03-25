@@ -4,7 +4,47 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 #instalações básicas de dependencias
-sudo apt-get install -y software-properties-common apt-utils vim git nodejs npm python3-pip wget curl firefox ranger taskwarrior ssh chromium-browser cmake default-jdk build-essential vim-nox python3-dev mono-complete gcc gdb gpp g++ golang htop tmux net-tools neofetch deluge apt-transport-https gnupg-agent ca-certificates gitk mpv snapd rclone arduino
+sudo apt-get install -y software-properties-common \ 
+                        apt-utils \
+                        feh \
+                        rofi \
+                        vim \
+                        git \
+                        nodejs \
+                        npm \
+                        python3-pip \
+                        wget \
+                        curl \
+                        firefox \
+                        ranger \
+                        taskwarrior \
+                        ssh \
+                        cmake \
+                        default-jdk \
+                        build-essential \
+                        python3-dev \
+                        mono-complete \
+                        gcc gdb gpp g++ \
+                        golang \
+                        htop \
+                        tmux \
+                        net-tools \
+                        neofetch \
+                        deluge \
+                        apt-transport-https \
+                        gnupg-agent \
+                        ca-certificates \
+                        gitk \
+                        mpv \
+                        snapd \
+                        rclone \
+                        arduino \
+                        i3-wm \ 
+                        i3status \
+                        i3pystatus \
+                        i3lock \
+                        i3lock-fancy \
+                        i3blocks 
 
 #config git
 git config --global user.email "jeronimo.torres@outlook.com"
