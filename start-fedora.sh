@@ -70,8 +70,7 @@ sudo dnf install dotnet-sdk-5.0 -y
 
 
 #php 
-sudo dnf install -y php php-common php-mysqlnd php-pgsql php-zip php-bz2 php-composer-ca-bundle php-bcmath php-curl php-cgi php-date php-mbstring php-uuid phpunit
-
+sudo dnf install php83 php83-php-{bz2,curl,mbstring,intl,mysql,sqlite3,bz2,http,gmp,zip,ldap,xml,common,oauth,soap,cgi,yaml,uuid,pgsql,uploadprogress,raphf,gd}
 #flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sleep 10s
